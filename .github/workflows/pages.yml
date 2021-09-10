@@ -1,5 +1,6 @@
 name: github pages
 
+# Trigger build
 on:
   push:
     branches:
@@ -14,6 +15,9 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup JS code
+        run: yarn
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
