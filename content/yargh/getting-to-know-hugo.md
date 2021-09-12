@@ -4,9 +4,13 @@ date: 2021-09-04T17:45:15-05:00
 draft: false
 ---
 
-Heard about Hugo for awhile.
+I heard about Hugo for a while before deciding to dive in. I guess the blazing fast GO CLI 
+experience got me curious enough to look around, and after leaving a world of many second JS 
+build times, I don't think I'll be looking back. 
 
-Was taken aback by all of the features this time I checked.
+Earlier on when I checked out Hugo, I don't recall as many of the content management features being
+available, but currently, I'm finding everything I'd ever need to host a personal blog site and 
+in the slimmest package possible. 
 
 Go is a perfect language for static site building and minimalism.
 
