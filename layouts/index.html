@@ -1,32 +1,46 @@
 {{ define "main" }}
-<main class="grid place-items-center min-h-screen bg-black text-white pt-6 pb-12">
-  <h1 class="cover-heading">Howdy, I'm Mr. Alex.</h1>
-  <img class="rounded-full h-80" src="/me0oh3.jpeg">
-  <p class="text-2xl">
-    I make web stuff, music...and occasionally emoji epics.
-  </p>
-  <h2 class="text-center text-3xl">
-    εїз <br>
-    ⌛♔♧ <br>
-    (✿◠‿◠)
-  </h2>
-  <p class="text-2xl">
-    Please find out more by visiting the following links.
-  </p>
-  <p class="lead" style="font-size:75px;">
-    <a href="https://github.com/alexfinnarn" title="Github" target="_blank">
-      <i class="fa fa-github" aria-hidden="true"></i>
-    </a>
-    <a href="http://www.linkedin.com/in/alexfinnarn" title="LinkedIn" target="_blank">
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-    </a>
-    <a href="https://medium.com/@alexfinnarn" title="Medium" target="_blank">
-      <i class="fa fa-medium" aria-hidden="true"></i>
-    </a>
-    <a href="https://twitter.com/alexfinnarn" title="Twitter" target="_blank">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a>
-  </p>
-</main>
+<style>
+    .home-grid {
+        display: grid;
+        grid-gap: 5px;
+        background-color: black;
+        grid-template-rows: 1fr 0.24fr 0.86fr 0.77fr 1.23fr 2.1fr;
+        grid-template-columns: 2fr 0.6fr 1fr 0.44fr;
+    }
 
+    main article, main div {
+        background-color: white;
+    }
+
+    .latest-post {
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+    .orange-block {
+        background-color: darkorange;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+</style>
+<main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline">
+  <article class="latest-post p-3">
+    <h2>The Post Title</h2>
+    <p>
+      Some text.
+      <a href="/yargh/getting-to-know-hugo">The blog post</a>
+    </p>
+  </article>
+  <article class="centered">
+    <blockquote>Stuff...</blockquote>
+  </article>
+  <div class="orange-block"></div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+</main>
 {{ end }}
