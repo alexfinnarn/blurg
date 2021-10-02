@@ -8,19 +8,19 @@
     }
 
     h1, h2, h3 {
-        @apply font-bold my-3;
+        @apply font-bold;
     }
 
     h1 {
-        @apply text-3xl;
+        @apply text-5xl my-3;
     }
 
     h2 {
-        @apply text-2xl;
+        @apply text-3xl mt-12 mb-6;
     }
 
     h3 {
-        @apply text-xl;
+        @apply text-2xl my-3;
     }
 
     p {
@@ -46,8 +46,27 @@
     blockquote {
         @apply px-4 italic opacity-80;
     }
+
+    pre {
+        @apply p-6 -mx-6 rounded-lg;
+        background-color: #272822;
+    }
+}
+
+@layer utilities {
+    .square {
+        aspect-ratio: 1/1;
+    }
 }
 
 .link-blue-underline a {
     @apply underline text-blue-500;
+}
+
+.language-gotemplate {
+    color: whitesmoke;
+}
+
+.centered {
+    @apply flex items-center justify-center;
 }
