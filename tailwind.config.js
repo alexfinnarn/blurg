@@ -5,7 +5,18 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
+      mongolian: "mongolian",
+      cambodian: "cambodian",
+    },
+    extend: {
+
+    },
   },
   variants: {
     extend: {},
