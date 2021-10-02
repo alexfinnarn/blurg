@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+
+<head>
 	<meta name="generator" content="Hugo 0.87.0" />
-  <title>My New Hugo Site</title>
-
-  
-  
-
+  <title>My New Hugo Site | Finn's Web</title>
   
   
   
-
   <link href="https://alexfinnarn.github.io/css/main.min.css" rel="stylesheet" />
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-
   <link rel="icon" href="/finn.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Alex Finnarn has a grand plan. He does Drupal, JavaScript, PHP, DevOps, Unicorn, and has a nice music collection, as well.">
   <meta name="author" content="Alex Finnarn">
 </head>
-<body><header class="grid grid-cols-3 text-center bg-white p-4 md:max-w-screen-lg mx-auto divide-x-2">
-  <a href="#foo">foo</a>
-  <a href="#bar">foo</a>
-  <a href="#baz">foo</a>
+<body class="flex flex-col min-h-screen"><header class="bg-black text-white p-4">
+  <nav class="md:max-w-screen-lg mx-auto flex flex-row justify-between">
+    <div class="space-x-2 divide-x-2">
+      <a href="/">Thoughts</a>
+      <a href="/yargh" class="pl-3">Yarghs</a>
+    </div>
+    <div>
+      <a href="#biz">Bizz</a>
+    </div>
+  </nav>
 </header>
-<div id="content">
-<main class="grid place-items-center min-h-screen bg-black text-white pt-6 pb-12">
-  <h1 class="cover-heading">Howdy, I'm Mr. Alex.</h1>
-  <img class="rounded-full h-80" src="/me0oh3.jpeg">
-  <p class="text-2xl">
-    I make web stuff, music...and occasionally emoji epics.
-  </p>
-  <h2 class="text-center text-3xl">
-    εїз <br>
-    ⌛♔♧ <br>
-    (✿◠‿◠)
-  </h2>
-  <p class="text-2xl">
-    Please find out more by visiting the following links.
-  </p>
-  <p class="lead" style="font-size:75px;">
-    <a href="https://github.com/alexfinnarn" title="Github" target="_blank">
-      <i class="fa fa-github" aria-hidden="true"></i>
-    </a>
-    <a href="http://www.linkedin.com/in/alexfinnarn" title="LinkedIn" target="_blank">
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-    </a>
-    <a href="https://medium.com/@alexfinnarn" title="Medium" target="_blank">
-      <i class="fa fa-medium" aria-hidden="true"></i>
-    </a>
-    <a href="https://twitter.com/alexfinnarn" title="Twitter" target="_blank">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a>
-  </p>
+<div id="content" class="flex-grow">
+<style>
+    .home-grid {
+        display: grid;
+        grid-gap: 5px;
+        background-color: black;
+        grid-template-rows: 1fr 0.24fr 0.86fr 0.77fr 1.23fr 2.1fr;
+        grid-template-columns: 2fr 0.6fr 1fr 0.44fr;
+    }
+
+    main article, main div {
+        background-color: white;
+    }
+
+    .latest-post {
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+    .orange-block {
+        background-color: darkorange;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+</style>
+<main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline">
+  <article class="latest-post p-3">
+    <h2>The Post Title</h2>
+    <p>
+      Some text.
+      <a href="/yargh/getting-to-know-hugo">The blog post</a>
+    </p>
+  </article>
+  <article class="centered">
+    <blockquote>Stuff...</blockquote>
+  </article>
+  <div class="orange-block"></div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
+  <div class="centered">fff</div>
 </main>
 
-
-        </div></body>
+        </div><footer class="bg-black p-4">
+  2021c
+</footer>
+</body>
 </html>
