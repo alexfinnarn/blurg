@@ -70,3 +70,8 @@
 .centered {
     @apply flex items-center justify-center;
 }
+
+.header-icons {
+    @apply fill-current text-white hover:text-gray-200 transform hover:scale-110;
+    height: 36px;
+}

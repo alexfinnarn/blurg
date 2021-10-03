@@ -2,45 +2,121 @@
 <style>
     .home-grid {
         display: grid;
-        grid-gap: 5px;
+        height: 100%;
+        grid-gap: 8px;
         background-color: black;
         grid-template-rows: 1fr 0.24fr 0.86fr 0.77fr 1.23fr 2.1fr;
-        grid-template-columns: 2fr 0.6fr 1fr 0.44fr;
+        grid-template-columns: 0.6fr 2fr 1fr 0.44fr;
     }
 
     main article, main div {
         background-color: white;
+        border: 1px solid black;
     }
 
-    .latest-post {
-        grid-column: 2/4;
-        grid-row: 2/4;
+    .a {
+        grid-column: 1/2;
+        grid-row: 1/6;
+        background-color: slateblue;
     }
 
-    .orange-block {
-        background-color: darkorange;
+    .b {
         grid-column: 2/3;
+        grid-row: 1/3;
+        background-color: #FED231;
+    }
+
+    .c {
+        grid-column: 3/4;
+        grid-row: 1/4;
+        background-color: teal;
+        background-image: url("/hunks/sneaky-brule.png");
+        background-blend-mode: color-dodge;
+        background-size: cover;
+    }
+
+    .d {
+        grid-column: 4/5;
         grid-row: 1/2;
+        background-color: slateblue;
+    }
+
+    .e {
+        grid-column: 2/3;
+        grid-row: 3/6;
+    }
+
+    .f {
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background-color: slateblue;
+        background-image: url("/hunks/sneaky-brule-mouth-2.png");
+        background-blend-mode: color-dodge;
+        background-size: cover;
+    }
+
+    .g {
+        grid-column: 4/5;
+        grid-row: 2/5;
+    }
+
+    .h {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .i {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        background-color: teal;
+    }
+
+    .j {
+        grid-column: 3/5;
+        grid-row: 5/7;
+        background-color: #FED231;
     }
 </style>
 <main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline">
-  <article class="latest-post p-3">
-    <h2>The Post Title</h2>
-    <p>
-      Some text.
-      <a href="/yargh/getting-to-know-hugo">The blog post</a>
-    </p>
+  <div class="e flex flex-row divide-x-4">
+    <article class="p-3 flex flex-col">
+      <h2>The Post Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur.
+      </p>
+      <a href="/yargh/getting-to-know-hugo">Read More</a>
+    </article>
+    <article class="p-3 flex flex-col">
+      <h2>The Second Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="/yargh/getting-to-know-hugo">Have at it, Harry!</a>
+    </article>
+  </div>
+  <article class="b flex flex-row justify-around items-center">
+    <span>fff</span>
+    <span>fff</span>
+    <span>fff</span>
   </article>
-  <article class="centered">
-    <blockquote>Stuff...</blockquote>
-  </article>
-  <div class="orange-block"></div>
-  <div class="centered">fff</div>
-  <div class="centered">fff</div>
-  <div class="centered">fff</div>
-  <div class="centered">fff</div>
-  <div class="centered">fff</div>
-  <div class="centered">fff</div>
-  <div class="centered">fff</div>
+  <div class="c transform hover:scale-110 hover:skew-x-3 -rotate-1  hover:-translate-y-2"></div>
+  <div class="d centered">d</div>
+  <div class="a centered">a</div>
+  <div class="f transform hover:scale-110 hover:skew-x-3 -rotate-1 hover:translate-y-2">
+<!--    <span class="animate-ping hover:animate-none w-1/2 h-2 bg-blue-700 mr-16"></span>-->
+  </div>
+  <div class="g centered">g</div>
+  <div class="h centered">h</div>
+  <div class="i centered">i</div>
+  <div class="j centered">j</div>
 </main>
 {{ end }}
