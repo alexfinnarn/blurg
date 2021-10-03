@@ -45,7 +45,7 @@
 </header>
 <div id="content" class="flex-grow">
 <main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline">
-  <div class="e flex flex-col md:flex-row divide-x-2 md:divide-x-4">
+  <div class="e flex flex-col md:flex-row divide-y-8 md:divide-y-0 md:divide-x-8">
     <article class="p-3 flex flex-col">
       <h2>The Post Title</h2>
       <p>
@@ -69,12 +69,19 @@
       <a href="/yargh/getting-to-know-hugo">Have at it, Harry!</a>
     </article>
   </div>
-  <article class="b flex flex-col md:flex-row justify-around items-center square md:sqauto">
+  <article class="b flex flex-row justify-around items-center square md:sqauto">
     <span class="p-3">fff</span>
     <span class="p-3">fff</span>
     <span class="p-3">fff</span>
   </article>
-  <div class="c transform hover:scale-110 hover:skew-x-3 rotate-180 lg:-rotate-1 hover:-translate-y-2 h-48 lg:h-auto"></div>
+  <div class="c transform hover:scale-110 hover:skew-x-3 rotate-180 lg:-rotate-1
+              hover:-translate-y-2 h-48 lg:h-auto
+              flex items-center justify-center">
+    <span class="block md:hidden transform rotate-180 skew-y-6 text-center font-bold text-5xl mix-blend-color-burn">
+      Name of<br>
+      Alex Finnarn
+    </span>
+  </div>
   <div class="d centered square md:sqauto">d</div>
   <div class="a centered">a</div>
   <div class="f transform hover:scale-110 hover:skew-x-3 -rotate-1 hover:translate-y-2 h-32 lg:h-auto">
