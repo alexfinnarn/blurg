@@ -67,7 +67,7 @@
 
 .header-icons {
     @apply fill-current text-white hover:text-gray-200 transform hover:scale-110;
-    height: 36px;
+    height: 42px;
 }
 
 .square {
@@ -93,6 +93,10 @@
 
     .square {
         aspect-ratio: auto;
+    }
+
+    .header-icons {
+        height: 36px;
     }
 }
 
