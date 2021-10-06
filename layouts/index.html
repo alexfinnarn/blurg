@@ -1,13 +1,13 @@
 {{ define "main" }}
-<main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline">
-  <div class="e flex flex-col md:flex-row divide-y-8 md:divide-y-0 md:divide-x-8">
+<main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline"
+      data-controller="homepage">
+  <div class="content flex flex-col md:flex-row divide-y-8 md:divide-y-0 md:divide-x-8">
     <article class="p-3 flex flex-col">
       <h2>Getting to know Hugo</h2>
-      <p>
-        In my inaugural blog post, I'll go over how I started this blog. It
+      <p> In my inaugural blog post, I'll go over how I started this blog. It
         covers creating a site, making layout templates, and publishing the first
-        blog post. Eventually, I'll get to how I built this handsome homepage.
-      </p>
+        blog post.</p>
+      <p>Eventually, I'll get to how I built this handsome homepage.</p>
       <a href="/yargh/getting-to-know-hugo">Read More</a>
     </article>
     <article class="p-3 flex flex-col">
@@ -15,9 +15,11 @@
       <p>
         Eventually, you'll see a list of content here...but for now, I'll just
         talk about my love of the Cleveland Browns...they'll be good some day!
+        And they're actually winning games now. Not like the many years of
+        pure sadness...
       </p>
-      <a href="https://www.youtube.com/watch?v=tRBDMMVctu8" target="_blank">
-        The Factory of Sadness
+      <a data-action="click->homepage#revealSadness">
+        Reveal the Factory of Sadness ->
       </a>
     </article>
   </div>
@@ -26,7 +28,7 @@
     <span class="p-3 flex items-center justify-center">Tab Two</span>
     <span class="p-3 flex items-center justify-center">Tab Three</span>
   </article>
-  <div class="c transform hover:scale-110 hover:skew-x-3 rotate-180 lg:-rotate-1
+  <div class="brule-head transform hover:scale-110 hover:skew-x-3 rotate-180 lg:-rotate-1
               hover:-translate-y-2 h-48 lg:h-auto
               flex items-center justify-center">
     <span class="block md:hidden transform rotate-180 skew-y-6 text-center font-bold text-5xl mix-blend-color-burn">
@@ -36,7 +38,7 @@
   </div>
   <div class="d centered square md:sqauto">d</div>
   <div class="a centered">a</div>
-  <div class="f transform hover:scale-110 hover:skew-x-3 -rotate-1 hover:translate-y-2 h-32 lg:h-auto">
+  <div class="brule-mouth transform hover:scale-110 hover:skew-x-3 -rotate-1 hover:translate-y-2 h-32 lg:h-auto">
     <!--<span class="animate-ping hover:animate-none w-1/2 h-2 bg-blue-700 mr-16"></span>-->
   </div>
   <div class="g centered p-3">
@@ -50,6 +52,9 @@
   </div>
   <div class="h centered">h</div>
   <div class="i centered">i</div>
-  <div class="j centered">j</div>
+  <div class="curtains centered md:h-64 lg:h-auto"
+       data-homepage-target="theater"
+       id="theater">
+  </div>
 </main>
 {{ end }}
