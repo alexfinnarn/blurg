@@ -100,7 +100,8 @@
     }
 }
 
-main article, main div {
+.home-grid main article,
+.home-grid main div {
     background-color: white;
     border: 1px solid black;
 }
@@ -128,7 +129,7 @@ main article, main div {
     background-color: #e74a22;
     background-image: url("/curtains-background.jpeg");
     background-size: cover;
-    height: 25vh;
+    height: 33vh;
     order: 3;
 }
 
@@ -163,7 +164,7 @@ main article, main div {
 }
 
 
-.b {
+.three-knobs {
     grid-column: 2/3;
     grid-row: 1/3;
     background-color: #e74a22;
