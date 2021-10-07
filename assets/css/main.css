@@ -179,10 +179,12 @@
     order: 9;
 }
 
-.g {
+.rosebud {
     grid-column: 4/5;
     grid-row: 2/5;
     order: 10;
+    background-image: url("/rosebud.jpeg");
+    background-position: center;
 }
 
 

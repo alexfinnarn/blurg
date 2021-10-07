@@ -48,7 +48,7 @@
 <div id="content" class="flex-grow">
 <main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline"
       data-controller="homepage">
-  <div class="content flex flex-col md:flex-row divide-y-8 md:divide-y-0 md:divide-x-8">
+  <div class="content flex flex-col md:flex-row divide-y-8 md:divide-y-0 md:divide-x-8 divide-black bg-white">
     <article class="p-3 flex flex-col">
       <h2>Getting to know Hugo</h2>
       <p> In my inaugural blog post, I'll go over how I started this blog. It
@@ -88,16 +88,20 @@
   <div class="brule-mouth transform hover:scale-110 hover:skew-x-3 -rotate-1 hover:translate-y-2 h-32 lg:h-auto">
     
   </div>
-  <div class="g centered p-3">
-    R<br>
-    O<br>
-    S<br>
-    E<br>
-    B<br>
-    U<br>
-    D<br>
+  <div class="rosebud centered p-3 bg-red-200 relative overflow-hidden">
+    <img src="/rosebud.jpeg" alt="Rosebud. A reference to Citizen Kane."
+    class="absolute opacity-80 top-0 left-0 w-full h-auto blur-sm md:hidden">
+    <div class="relative text-white text-3xl">
+      <span class="pr-4">R</span><br>
+      <span class="pl-4">O</span><br>
+      <span class="pr-3">S</span><br>
+      <span class="pl-3">E</span><br>
+      <span class="pr-2">B</span><br>
+      <span class="pl-2">U</span><br>
+      <span class="">D</span><br>
+    </div>
   </div>
-  <div class="h centered">h</div>
+  <div class="h centered bg-white">h</div>
   <div class="i centered">i</div>
   <div class="curtains centered md:h-64 lg:h-auto"
        data-homepage-target="theater"
