@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://alexfinnarn.github.io/yargh/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Installing Stimulus</title>
+      <link>https://alexfinnarn.github.io/yargh/installing-stimulus/</link>
+      <pubDate>Fri, 08 Oct 2021 20:53:49 -0500</pubDate>
+      
+      <guid>https://alexfinnarn.github.io/yargh/installing-stimulus/</guid>
+      <description>It doesn&amp;rsquo;t take long while building out a website before you end up needing to code up user interaction, usually via clicking on an element. Before reaching for React or Vue, you can start out with vanilla JS to quickly add an event listener.
+myElement.addEventListener(&amp;#39;click&amp;#39;, () =&amp;gt; console.log(&amp;#39;hello world&amp;#39;)) But then you need to make sure the listener gets attached and detached from each element. This is a task most people delegate to Vue or React where special template syntax allows you to call a function when the user clicks on an element.</description>
+    </item>
+    
+    <item>
       <title>Toml Config</title>
       <link>https://alexfinnarn.github.io/yargh/toml-config/</link>
       <pubDate>Sun, 03 Oct 2021 14:34:28 -0500</pubDate>
