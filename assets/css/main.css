@@ -88,10 +88,8 @@
     .home-grid {
         display: grid;
         grid-template-columns: 0.5fr 1.5fr 2fr 0.5fr;
-        grid-template-rows: 0.6fr 0.4fr 1fr 1.1fr;
+        grid-template-rows: 0.6fr 0.4fr 1fr 1.2fr;
         gap: 8px;
-        /*justify-content: center;*/
-        /*align-content: center;*/
     }
 
     .square {
@@ -106,10 +104,17 @@
 .fun-reads {
     grid-column: 2/3;
     grid-row: 3/4;
-    background-color: white;
     border: 1px dotted chartreuse;
+    color: #fff;
+    /*text-shadow: 2px;*/
     order: 5;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
+
+.fun-reads a {
+    color: #fff;
+}
+
 
 .new-article {
     grid-column: 3/4;
@@ -154,12 +159,12 @@
     background-image: url("/images/curtains-background.jpeg");
     background-size: cover;
     order: 4;
-    height: 33vh;
+    max-height: 480px;
 }
 
-@media (min-width: 719px) {
+@media (min-width: 1023px) {
     .curtains {
-        height: auto;
+        height: 414px;
     }
 }
 

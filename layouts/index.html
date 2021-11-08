@@ -1,10 +1,10 @@
 {{ define "main" }}
-<main class="home-grid md:max-w-screen-4xl mx-auto link-blue-underline"
+<main class="home-grid md:max-w-screen-3xl mx-auto link-blue-underline"
       data-controller="homepage">
 
   <div class="brule-head transform hover:scale-110 hover:skew-x-3 rotate-180 lg:-rotate-1
               hover:-translate-y-2 h-32 lg:h-auto flex items-center justify-center">
-    <span class="block md:hidden transform rotate-180 skew-y-6 text-center font-bold text-5xl mix-blend-color-burn">
+    <span class="block lg:hidden transform rotate-180 skew-y-6 text-center font-bold text-5xl mix-blend-color-burn">
       Name of<br>
       Alex Finnarn
     </span>
@@ -36,11 +36,15 @@
     </a>
   </article>
 
-  <article class="fun-reads">
-    <p>Read this</p>
-    <hr>
-    <p>Read this</p>
-  </article>
+  <figure class="fun-reads flex flex-col justify-center items-center px-4 text-3xl
+                 text-white bg-purple-500 font-bold py-4">
+    <blockquote class="py-6">
+      Be regular and orderly in your life, so that you may be violent and original in your work.
+    </blockquote>
+    <cite>
+      <a href="https://en.wikipedia.org/wiki/Gustave_Flaubert" class="text-2xl">Gustave Flaubert</a>
+    </cite>
+  </figure>
 
   <div class="brule-mouth transform hover:scale-110 hover:skew-x-3 -rotate-1 hover:translate-y-2 h-32 lg:h-auto">
     <!--<span class="animate-ping hover:animate-none w-1/2 h-2 bg-blue-700 mr-16"></span>-->
@@ -51,7 +55,7 @@
        id="theater">
   </div>
 
-  <div class="rosebud centered p-3 bg-red-200 relative overflow-hidden h-48">
+  <div class="rosebud centered p-3 bg-red-200 relative overflow-hidden h-48 lg:h-auto">
     <img src="/images/rosebud.jpeg" alt="Rosebud. A reference to Citizen Kane."
          class="absolute opacity-80 top-0 left-0 w-full h-auto blur-sm md:hidden">
     <div class="relative text-white text-3xl">
